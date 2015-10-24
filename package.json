@@ -2,18 +2,26 @@
   "name": "product-manager",
   "version": "1.0.0",
   "description": "Product Management Demo",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Jeff Handley",
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeffhandley/product-manager"
+    "url": "git+https://github.com/jeffhandley/product-manager.git"
   },
   "bugs": {
     "url": "https://github.com/jeffhandley/product-manager/issues"
   },
-  "homepage": "https://github.com/jeffhandley/product-manager"
+  "homepage": "https://github.com/jeffhandley/product-manager",
+  "dependencies": {
+    "babel": "^5.8.29",
+    "express": "^4.13.3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {}
 }
