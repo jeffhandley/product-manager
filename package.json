@@ -1,0 +1,19 @@
+{
+  "name": "product-manager",
+  "version": "1.0.0",
+  "description": "Product Management Demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Handley",
+  "license": "Apache 2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffhandley/product-manager"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffhandley/product-manager/issues"
+  },
+  "homepage": "https://github.com/jeffhandley/product-manager"
+}
