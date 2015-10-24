@@ -1,20 +1,21 @@
 import express from 'express';
+import path from 'path';
 import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import Layout from './areas/shared/Layout';
 
 let app = express();
 
-app.get('/', (req, res) => {
-    let layout = React.renderToString(
-        <html>
-            <head>
-                <title>Product Manager</title>
-            </head>
-            <body>
-                <h1>Product Manager</h1>
-            </body>
-        </html>
+app.get('*', (req, res) => {
+    let pagePath = path.join('pages', req.url);
+    let Page = require(`./${pagePath}`);
+
+    let layout = ReactDOMServer.renderToString(
+        <Layout>
+            <Page />
+        </Layout>
     );
-    
+
     res.send(layout);
 });
 
